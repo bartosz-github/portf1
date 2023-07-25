@@ -1,0 +1,72 @@
+
+/* Testing some basic elements in diff viewports + in default mobile view (mobile first) */
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+/* Testing some basic elements in diff viewports + in default mobile view (mobile first) */
+
+/* Small devices */
+@media screen and (min-width: 576px) {
+    body {
+      background-color: blue;
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  }
+  /* Medium devices */
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: green;
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+  }
+  /* Large devices */
+  @media screen and (min-width: 992px) {
+    body {
+      background-color: yellow;
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+  }
+  /* Extra Large */
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: red;
+    }
+    .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+  }

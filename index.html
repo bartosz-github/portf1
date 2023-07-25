@@ -8,7 +8,69 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-	<!-- <script src="index.js"></script> -->
+	
+
+<!--####################-->
+<!--   LJ says NAVBAR   -->
+
+<!--5.	The menu on the left hand side is a static menu, meaning this will stay in place as the rest of the content scrolls
+1.	For smaller devices (below 768px) this can be replaced with a burger menu, 
+you can update this to be a slide out menu once you've learnt JavaScript-->
+<!--Hamburger CSS (no JS)-->
+<!--https://dev.to/ljcdev/hamburger-css-no-js-2dfa-->
+  
+
+<ul class="navbar" id="navbar">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About me</a></li>
+  <li><a href="#">Coding examples</a></li>
+  <li><a href="#">SCS scheme</a></li>
+  <li><a href="#">Contact Me</a></li>
+  <a class="close" href="#">
+    <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+  </a>
+</ul>
+<a class="hamburger" href="#navbar">
+    <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+</a>
+<!--   LJ says NAVBAR   -->
+<!--####################-->
+
+<!--################################################################################-->
+<!--https://www.w3schools.com/w3css/w3css_sidebar.asp-->
+<!--https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_content-->
+<!--ALTERNATIVE-->
+<!--https://dev.to/swastikyadav/menu-sidebar-toggle-functionality-with-pure-css-and-no-javascript-1je6-->
+<!--################################################################################-->
+
+
+<!--####################-->
+<!-- Simon says SIDEBAR -->
+  <div class="sidebar"> <!--Sidebar above 768px-->
+    <div class="logo-wrapper">
+        <div class="logo">
+            <a href="index.html"><img alt="personal-logo" class="logo-image" src="Simon's%20Portfolio_files/simharuk-low-resolution-logo-white-on-black-background.png"></a>
+        </div>
+    </div>
+    <div class="link">
+        <a href="index.html"><button class="button button-selected">Home</button></a>
+    </div>
+    <div class="link">
+        <a href="about.html"><button class="button button-nav">About Me</button></a>
+    </div>
+    <div class="link">
+        <a href="examples.html"><button class="button button-nav">Coding Examples</button></a>
+    </div>
+    <div class="link">
+        <a href="scheme.html"><button class="button button-nav">SCS Scheme</button></a>
+    </div>
+    <div class="link">
+        <a href="#contact-section"><button class="button button-nav">Contact Me</button></a>
+    </div>
+  </div>  <!--Sidebar-->
+<!-- Simon says SIDEBAR -->
+<!--####################-->
+
 
     <!-- Testing some basic elements in diff viewports + in default mobile view (mobile first) -->
 

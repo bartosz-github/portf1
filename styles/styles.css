@@ -1,4 +1,6 @@
 
+    /* THISHERE*/
+
 /* Testing some basic elements in diff viewports + in default mobile view (mobile first) */
 
 .flex-container {
@@ -10,7 +12,7 @@
 }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /*  */
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -24,9 +26,37 @@
   }
 /* Testing some basic elements in diff viewports + in default mobile view (mobile first) */
 
+/*##########################*/
+/* show current MQ setting */
+  .MQ_viewport::after {
+    content: "XS devices < 576, default, no MQ";
+  }
+.MQ_viewport {
+  text-align: right;
+}
+.MQ_viewport {
+  background-color: lightblue;
+}
+/* show current MQ setting */
+/*########################*/
+
 
 /*####################################################################################################################*/
-/*#################################### HAMBURGER EXPERIMENT ##########################################################*/
+/*################################################ Banner Image ######################################################*/
+
+  .banner_img {
+  width: 100%;
+  background-image: url('../pics/Dark Green Rough Surface.jpg'); /* banner_1200x675.jpg */
+  height: 180px;
+  background-color: purple;
+  background-position: center;
+}
+
+/*################################################ Banner Image ######################################################*/
+/*####################################################################################################################*/
+
+/*####################################################################################################################*/
+/*#################################### HAMBURGER & NAVBAR ############################################################*/
 * {
   margin: 0;
   padding: 0;
@@ -108,15 +138,17 @@ li a:hover, li a:focus {
   /* show border bottom */
   border-bottom: 1px solid white;
 }
-/*#################################### HAMBURGER EXPERIMENT ##########################################################*/
+/*#################################### HAMBURGER & NAVBAR ############################################################*/
 /*####################################################################################################################*/
 
 
 /*####################################################################################################################*/
 /*############################################### MEDIA QUERIES ######################################################*/
+/*###################### XS devices < 575, default, no MQ #######################*/
 
+/*#########################################################################*/
+/*########### Small devices 576px - 767px width ##########################*/
 
-/* Small devices */
 @media screen and (min-width: 576px) {
     body {
       background-color: blue;
@@ -128,10 +160,18 @@ li a:hover, li a:focus {
         align-items: center;
         flex-direction: column;
     }
-
+    /*##########################*/
+    /* show current MQ setting */
+    .MQ_viewport::after {
+      content: "Small devices 576px - 767px width";
+    }
+    /* show current MQ setting */
+    /*########################*/
   }
-  
-  /* Medium devices */
+/*############################# Small devices ##############################*/
+/*#########################################################################*/
+/*################ Medium devices 768px - 991px width ####################*/
+
   @media screen and (min-width: 768px) {
     body {
       background-color: green;
@@ -194,9 +234,19 @@ li a:hover, li a:focus {
 
       /* <!-- W3C Fixed Sidenav SIDEnav --> */
       /* <!--###########################--> */
-  }
 
-  /* Large devices */
+    /*##########################*/
+    /* show current MQ setting */
+    .MQ_viewport::after {
+      content: "Medium devices 768px - 991px width";
+    }
+    /* show current MQ setting */
+    /*########################*/
+
+  }
+/*############################# Medium devices #############################*/
+/*#########################################################################*/
+/*###################### Large 992px - 1199px width ######################*/
   @media screen and (min-width: 992px) {
     body {
       background-color: yellow;
@@ -257,9 +307,19 @@ li a:hover, li a:focus {
 
       /* <!-- W3C Fixed Sidenav SIDEnav --> */
       /* <!--###########################--> */
-  }
 
-  /* Extra Large */
+      /*##########################*/
+      /* show current MQ setting */
+      .MQ_viewport::after {
+        content: "Large 992px - 1199px width";
+      }
+      /* show current MQ setting */
+      /*########################*/
+
+  }
+/*############################# Large devices ################################*/
+/*###########################################################################*/
+/*################# Extra Large 1200px width and above #####################*/
   @media screen and (min-width: 1200px) {
     body {
       background-color: red;
@@ -324,6 +384,15 @@ li a:hover, li a:focus {
 
       /* <!-- W3C Fixed Sidenav SIDEnav --> */
       /* <!--###########################--> */
+
+      /*##########################*/
+      /* show current MQ setting */
+      .MQ_viewport::after {
+        content: "Extra Large 1200px width and above";
+      }
+      /* show current MQ setting */
+      /*########################*/
+
   }
 /*############################################### MEDIA QUERIES ######################################################*/
   /*####################################################################################################################*/

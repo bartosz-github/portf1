@@ -40,18 +40,66 @@
 /* show current MQ setting */
 /*########################*/
 
+/*####################################################################################################################*/
+/*############################################### Image Persona ######################################################*/
+
+
+.Persona {
+
+     /*#########################*/
+    /*  hide image in this MQ  */
+    .Persona {
+      display: none;
+    }
+     /* hide image in this MQ  */
+    /*########################*/
+
+}
+
+/*############################################### Image Persona ######################################################*/
+/*####################################################################################################################*/
 
 /*####################################################################################################################*/
 /*################################################ Banner Image ######################################################*/
 
   .banner_img {
-  width: 100%;
-  background-image: url('../pics/Dark Green Rough Surface.jpg'); /* banner_1200x675.jpg */
-  height: 180px;
-  background-color: purple;
-  background-position: center;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  /* width: 100%; */
+  background-image: url('../pics/Photo of a Brown Textile.jpg'); /* Multicolored Sparkles2.jpg */
+  
+  /* A Rough Surface with Circles.jpg FAV MNM ZAMEER.jpg*/
+  /* FAV FAV Blue and Purple Gradient Background.jpg */
+  /* 1 Pink Toy Car on Pink Background.jpg  */
+  /* Photo of a Brown Textile.jpg */
+  /* fav Purple and Pink Human Illustration.jpg */
+  /* FAV Purple and White Abstract Painting.jpg */
 
+
+  /* Person Encoding in Laptop.jpg Orange Graphics Design.jpg Multicolored Sparkles.jpg FAV Underwater.jpg*/
+  /* FAV Purple and Pink Diamond on Blue Background.jpg FAV Purple and White Light Illustration.jpg*/
+  /* FAV Colorful Cubes And Puzzle Piece.jpg Green and White Striped Illustration.jpg Grayscale Abstract Art.jpg*/
+  /* Red Moon during Night Time.jpg  shoes Photo of Gray Sneakers2.jpg Multi Colored Paper.jpg*/
+  /* Geometric Pattern On Chameleon Color.jpg */
+  /* background-color: purple; */
+  /* height: 380px; */
+    background-position: center;
+  background-size: cover;
+  /* background-size: contain; */
+  background-repeat: no-repeat
+  /* overflow: hidden;
+  background-overlow: hidden; */
+  }
+
+  .banner_img > div {
+    /* background-color: #f1f1f1; */
+    color: whitesmoke;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+  }
 /*################################################ Banner Image ######################################################*/
 /*####################################################################################################################*/
 
@@ -86,7 +134,7 @@ body {
 }
 
 .close {
-  background: black;
+  background: #111111;
 }
 
 .hamburger img, .close img {
@@ -105,7 +153,7 @@ body {
   overflow: hidden;
   /* basic menu styling*/
   list-style: none;
-  background: black;
+  background: #111111;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -130,7 +178,7 @@ li a {
   font-size: 1.2rem;
   /* remove default underline and add our own with padding and border bottom */
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #111111;
   padding-bottom: 0.5rem;
 }
 
@@ -167,6 +215,16 @@ li a:hover, li a:focus {
     }
     /* show current MQ setting */
     /*########################*/
+
+
+      /*#########################*/
+     /*  hide image in this MQ  */
+      .Persona {
+         display: none;
+      }
+      /* hide image in this MQ  */
+     /*########################*/
+
   }
 /*############################# Small devices ##############################*/
 /*#########################################################################*/
@@ -243,6 +301,24 @@ li a:hover, li a:focus {
     /* show current MQ setting */
     /*########################*/
 
+      
+      /*##########################*/
+      /* set up image in this MQ */
+      .Persona {
+        display: block;
+        background-image: url('../img/profile-artists-sketch 48 - smaller.png');
+        height: calc(100vh - 200px);
+        width: calc(100vh - 200px);
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid white;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        justify-content: center;
+      } 
+      /* set up image in this MQ */
+      /*########################*/
   }
 /*############################# Medium devices #############################*/
 /*#########################################################################*/
@@ -316,6 +392,24 @@ li a:hover, li a:focus {
       /* show current MQ setting */
       /*########################*/
 
+      
+      /*##########################*/
+      /* set up image in this MQ */
+      .Persona {
+        display: block;
+        background-image: url('../img/profile-artists-sketch 48 - smaller.png');
+        height: calc(100vh - 200px);
+        width: calc(100vh - 200px);
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid white;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        justify-content: center;
+      } 
+      /* set up image in this MQ */
+      /*########################*/
   }
 /*############################# Large devices ################################*/
 /*###########################################################################*/
@@ -392,9 +486,46 @@ li a:hover, li a:focus {
       }
       /* show current MQ setting */
       /*########################*/
-
+      
+      /*##########################*/
+      /* set up image in this MQ */
+      .Persona {
+        display: block;
+        background-image: url('../img/profile-artists-sketch 48 - smaller.png');
+        height: calc(100vh - 200px);
+        width: calc(100vh - 200px);
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid white;
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        justify-content: center;
+      } 
+      /* set up image in this MQ */
+      /*########################*/
   }
 /*############################################### MEDIA QUERIES ######################################################*/
   /*####################################################################################################################*/
 
 
+/* TEMP */
+
+/*
+            width: 150px;
+            height: 150px;
+
+            width:min-content;
+            height: min-content;
+            
+            width: fit-content;
+            height: fit-content;
+          
+            width:max-content;
+            height: max-content;
+
+            width: auto;
+            height: auto;
+*/
+
+/* TEMP */

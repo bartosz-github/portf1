@@ -17,10 +17,8 @@
     padding: 20px;
     font-size: 30px;
   }
-  /* .sidebar {
-    display: none;
-  } */
-/* simple static @3C sidenav */
+
+/* simple static sidenav */
   .sidenav{
     display: none;
   }
@@ -40,22 +38,20 @@
 /* show current MQ setting */
 /*########################*/
 
+.Intro h3::after {
+  content: "Bartosz Iwanczak";
+}
+
+
 /*####################################################################################################################*/
 /*############################################### Image Persona ######################################################*/
-
-
 .Persona {
-
-     /*#########################*/
-    /*  hide image in this MQ  */
+     /*#########################*/    /*  hide image in this MQ  */
     .Persona {
       display: none;
     }
-     /* hide image in this MQ  */
-    /*########################*/
-
+     /* hide image in this MQ  */    /*########################*/
 }
-
 /*############################################### Image Persona ######################################################*/
 /*####################################################################################################################*/
 
@@ -104,7 +100,7 @@
 /*####################################################################################################################*/
 
 /*####################################################################################################################*/
-/*#################################### HAMBURGER & NAVBAR ############################################################*/
+/*################################################## HAMBURGER NAVBAR ################################################*/
 * {
   margin: 0;
   padding: 0;
@@ -128,14 +124,13 @@ body {
   width: 36px;
   height: 36px;
 }
-
-.hamburger {
+/* commented of, hamburger icon with transparent background, hence this is not needed
+/* .hamburger {
   background: white;
-}
-
+} 
 .close {
   background: #111111;
-}
+} */
 
 .hamburger img, .close img {
   width: 100%;
@@ -153,7 +148,7 @@ body {
   overflow: hidden;
   /* basic menu styling*/
   list-style: none;
-  background: #111111;
+  background:#2F0C2F;  /* #111111 */
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
@@ -173,20 +168,20 @@ body {
 li a {
   display: block;
   font-family: 'Open Sans', sans-serif;
-  color: white;
+  color: #818181; /*  white */
   font-weight: bold;
   font-size: 1.2rem;
   /* remove default underline and add our own with padding and border bottom */
   text-decoration: none;
-  border-bottom: 1px solid #111111;
-  padding-bottom: 0.5rem;
+  /* border-bottom: 1px solid #111111; */
+  /* padding-bottom: 0.5rem; */
 }
 
 li a:hover, li a:focus {
   /* show border bottom */
   border-bottom: 1px solid white;
 }
-/*#################################### HAMBURGER & NAVBAR ############################################################*/
+/*################################################## HAMBURGER NAVBAR ################################################*/
 /*####################################################################################################################*/
 
 
@@ -248,21 +243,22 @@ li a:hover, li a:focus {
       display: none;
     }
 
-    .sidenav{
-      display:block;
-    }
-
-          /* <!--###########################--> */
+      /* <!--###########################--> */
       /* <!-- W3C Fixed Sidenav SIDEnav --> */
 
       .sidenav {
+        display:block;
+        float: left;
+        position: -webkit-sticky;
+        position: fixed;
+        text-align: center;
         height: 100%;
         width: 160px;
-        position: fixed;
+        /* position: fixed; */
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: #16072d; /* #111 */
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -307,8 +303,10 @@ li a:hover, li a:focus {
       .Persona {
         display: block;
         background-image: url('../img/profile-artists-sketch 48 - smaller.png');
-        height: calc(100vh - 200px);
-        width: calc(100vh - 200px);
+        height: calc(100vh - 450px);
+        max-height: 25vh;
+        width: calc(100vh - 450px);
+        max-width: 25vh;
         border-radius: 50%;
         background-color: black;
         border: 1px solid white;
@@ -353,7 +351,7 @@ li a:hover, li a:focus {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: #16072d; /* #111 */
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -398,8 +396,10 @@ li a:hover, li a:focus {
       .Persona {
         display: block;
         background-image: url('../img/profile-artists-sketch 48 - smaller.png');
-        height: calc(100vh - 200px);
-        width: calc(100vh - 200px);
+        height: calc(100vh - 450px);
+        max-height: 25vh;
+        width: calc(100vh - 450px);
+        max-width: 25vh;
         border-radius: 50%;
         background-color: black;
         border: 1px solid white;
@@ -448,7 +448,7 @@ li a:hover, li a:focus {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: #16072d; /* #111 */
         overflow-x: hidden;
         padding-top: 20px;
       }
@@ -492,8 +492,12 @@ li a:hover, li a:focus {
       .Persona {
         display: block;
         background-image: url('../img/profile-artists-sketch 48 - smaller.png');
-        height: calc(100vh - 200px);
-        width: calc(100vh - 200px);
+        /* min-height: 20vh; */
+        height: calc(100vh - 450px);
+        max-height: 25vh;
+        /* min-width: 20vh; */
+        width: calc(100vh - 450px);
+        max-width: 25vh;
         border-radius: 50%;
         background-color: black;
         border: 1px solid white;

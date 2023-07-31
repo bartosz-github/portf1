@@ -3,7 +3,7 @@
 
 /* Testing some basic elements in diff viewports + in default mobile view (mobile first) */
 
-.flex-container {
+/* .flex-container {
     display: flex;
     background-color: DodgerBlue;
     justify-content: center;
@@ -12,11 +12,11 @@
 }
   
   .flex-container > div {
-    background-color: #f1f1f1; /*  */
+    background-color: #f1f1f1; 
     margin: 10px;
     padding: 20px;
     font-size: 30px;
-  }
+} */
 
 /* simple static sidenav */
   .sidenav{
@@ -38,19 +38,30 @@
 /* show current MQ setting */
 /*########################*/
 
+.Intro {
+  padding-top: 100px;
+  text-align: center;
+}
+
 .Intro h3::after {
   content: "Bartosz Iwanczak";
 }
 
+.AboutMe {
+  padding-top: 100px;
+  text-align: center;
+}
+.SCS {
+  padding-top: 100px;
+  text-align: center;
+}
 
 /*####################################################################################################################*/
 /*############################################### Image Persona ######################################################*/
 .Persona {
-     /*#########################*/    /*  hide image in this MQ  */
     .Persona {
       display: none;
     }
-     /* hide image in this MQ  */    /*########################*/
 }
 /*############################################### Image Persona ######################################################*/
 /*####################################################################################################################*/
@@ -64,7 +75,7 @@
     align-items: center;
     height: 100vh;
   /* width: 100%; */
-  background-image: url('../pics/FAV FAV Blue and Purple Gradient Background.jpg'); /* Multicolored Sparkles2.jpg */
+  background-image: url('../pics/Person Encoding in Laptop.jpg'); /* Multicolored Sparkles2.jpg */
   
   /* A Rough Surface with Circles.jpg FAV MNM ZAMEER.jpg*/
   /* FAV FAV Blue and Purple Gradient Background.jpg */
@@ -74,7 +85,7 @@
   /* FAV Purple and White Abstract Painting.jpg */
 
 
-  /* Person Encoding in Laptop.jpg Orange Graphics Design.jpg Multicolored Sparkles.jpg FAV Underwater.jpg*/
+  /* Person Encoding in Laptop.jpg Orange Graphics Design.jpg FAV Underwater.jpg*/
   /* FAV Purple and Pink Diamond on Blue Background.jpg FAV Purple and White Light Illustration.jpg*/
   /* FAV Colorful Cubes And Puzzle Piece.jpg Green and White Striped Illustration.jpg Grayscale Abstract Art.jpg*/
   /* Red Moon during Night Time.jpg  shoes Photo of Gray Sneakers2.jpg Multi Colored Paper.jpg*/
@@ -244,7 +255,7 @@ li a:hover, li a:focus {
     }
 
       /* <!--###########################--> */
-      /* <!-- W3C Fixed Sidenav SIDEnav --> */
+      /* <!-- Sidenav --> */
 
       .sidenav {
         display:block;
@@ -259,7 +270,8 @@ li a:hover, li a:focus {
         top: 0;
         left: 0;
         background-color: #16072d; /* #111 */
-        overflow-x: hidden;
+        overflow: auto;
+
         padding-top: 20px;
       }
 
@@ -286,7 +298,7 @@ li a:hover, li a:focus {
         .sidenav a {font-size: 18px;}
       }
 
-      /* <!-- W3C Fixed Sidenav SIDEnav --> */
+      /* <!-- Sidenav --> */
       /* <!--###########################--> */
 
     /*##########################*/
@@ -302,12 +314,13 @@ li a:hover, li a:focus {
       /* set up image in this MQ */
       .Persona {
         display: block;
-        background-image: url('../img/profile-artists-sketch 48 - smaller.png');
+        background-image: url('../img/profile-artists-sketch 15 - smaller 2.png'); 
         height: calc(100vh - 450px);
         max-height: 25vh;
         width: calc(100vh - 450px);
         max-width: 25vh;
-        border-radius: 50%;
+        border-radius: 15px; /*  border-radius: 15px 15px 15px 15px; */
+        /* border-radius: 50%; */
         background-color: black;
         border: 1px solid white;
         background-repeat: no-repeat;
@@ -342,7 +355,7 @@ li a:hover, li a:focus {
       display:block;
     }
       /* <!--###########################--> */
-      /* <!-- W3C Fixed Sidenav SIDEnav --> */
+      /* <!-- Sidenav --> */
 
       .sidenav {
         height: 100%;
@@ -379,7 +392,7 @@ li a:hover, li a:focus {
         .sidenav a {font-size: 18px;}
       }
 
-      /* <!-- W3C Fixed Sidenav SIDEnav --> */
+      /* <!-- Sidenav --> */
       /* <!--###########################--> */
 
       /*##########################*/
@@ -395,12 +408,13 @@ li a:hover, li a:focus {
       /* set up image in this MQ */
       .Persona {
         display: block;
-        background-image: url('../img/profile-artists-sketch 48 - smaller.png');
+        background-image: url('../img/profile-artists-sketch 15 - smaller 2.png'); 
         height: calc(100vh - 450px);
         max-height: 25vh;
         width: calc(100vh - 450px);
         max-width: 25vh;
-        border-radius: 50%;
+        border-radius: 15px; /*  border-radius: 15px 15px 15px 15px; */
+        /* border-radius: 50%; */
         background-color: black;
         border: 1px solid white;
         background-repeat: no-repeat;
@@ -439,7 +453,7 @@ li a:hover, li a:focus {
       display:block;
     }
         /* <!--###########################--> */
-      /* <!-- W3C Fixed Sidenav SIDEnav --> */
+      /* <!-- Sidenav --> */
 
       .sidenav {
         height: 100%;
@@ -476,7 +490,7 @@ li a:hover, li a:focus {
         .sidenav a {font-size: 18px;}
       }
 
-      /* <!-- W3C Fixed Sidenav SIDEnav --> */
+      /* <!-- Sidenav --> */
       /* <!--###########################--> */
 
       /*##########################*/
@@ -491,14 +505,15 @@ li a:hover, li a:focus {
       /* set up image in this MQ */
       .Persona {
         display: block;
-        background-image: url('../img/profile-artists-sketch 48 - smaller.png');
+        background-image: url('../img/profile-artists-sketch 15 - smaller 2.png'); 
         /* min-height: 20vh; */
         height: calc(100vh - 450px);
         max-height: 25vh;
         /* min-width: 20vh; */
         width: calc(100vh - 450px);
         max-width: 25vh;
-        border-radius: 50%;
+        border-radius: 15px; /*  border-radius: 15px 15px 15px 15px; */
+        /* border-radius: 50%; */
         background-color: black;
         border: 1px solid white;
         background-repeat: no-repeat;
@@ -509,6 +524,7 @@ li a:hover, li a:focus {
       /* set up image in this MQ */
       /*########################*/
   }
+/*################# Extra Large #####################*/
 /*############################################### MEDIA QUERIES ######################################################*/
   /*####################################################################################################################*/
 
